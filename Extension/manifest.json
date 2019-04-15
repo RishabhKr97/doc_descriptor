@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Doc Search",
+    "version": "1.0",
+
+    "description": "Distributed search engine for research papers.",
+
+    "icons": {
+      "48": "icons/book.svg"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*.pdf"],
+        "js": ["pdf_checker.js"]
+      }
+    ]
+
+  }
