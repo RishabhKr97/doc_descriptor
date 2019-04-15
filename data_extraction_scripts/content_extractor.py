@@ -22,7 +22,7 @@ while True:
     else:
         try:
             data = open('../data/'+curr_paper+'.pdf', 'rb').read()
-            response = requests.post('http://scienceparse.allenai.org/v1', headers=headers, data=data)
+            response = requests.post('http://localhost:8080/v1', headers=headers, data=data)
             if response.status_code == 200:
                 with open('../data/'+curr_paper+'.json', 'w') as f:
                     json.dump(response.json(), f)
