@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <script src="lib/jquery-3.3.1.slim.min.js"></script>
+        <script src="lib/popper.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <style>
+            html, body {
+                width: 500px;
+                height: 600px;
+            }
+            .nav-item {
+                margin: 20px;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .btn-circle {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-image: url("icons/send.png");
+                background-repeat: no-repeat;
+                background-size: 50px 50px;
+                margin-left: 20px;
+                margin-top: -6px;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <ul class="nav" style="border-style: solid; border-width: 0px 0px 1px 0px; border-color: gray">
+                <li class="nav-item">
+                    <img src="icons/book.png" class="rounded-circle" alt="Icon" width="50" height="50">
+                </li>
+                <li class="nav-item" style="margin-top:27px">
+                    <button type="button" class="btn btn-primary">Open Web Page</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid" style="margin-top:20px">
+            <img src="icons/lightbulb.png" height = "300" class="center">
+            <p align="center" style="color: gray; font-size: 2em; font-weight: bold">0 Contributions</p>
+
+            <div class="input-group" style="margin-top:40px">
+                <input type="text" class="form-control" placeholder="Enter Search String">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-default btn-circle"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
