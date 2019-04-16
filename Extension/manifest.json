@@ -10,6 +10,10 @@
     "48": "icons/book.png"
   },
 
+  "permissions": [
+    "storage"
+  ],
+
   "browser_action": {
     "default_icon": "icons/book.png",
     "default_title": "Doc Search",
