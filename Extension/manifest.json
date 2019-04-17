@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*.pdf", "file://*.pdf"],
-      "js": ["pdf_checker.js"]
+      "js": ["js/pdf_checker.js"]
     }
   ]
 
