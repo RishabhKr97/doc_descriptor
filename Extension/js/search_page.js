@@ -1,3 +1,8 @@
+var textPresetVal = new Choices('#choices-text-preset-values',
+{
+removeItemButton: true,
+});
+
 $('#start-search').click(function(){
     var query = '?';
     $('.choices__item--selectable').each(function(){
