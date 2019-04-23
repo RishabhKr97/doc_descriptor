@@ -58,6 +58,10 @@ $('#test').click(function(){
     }
 });
 
+for(var i=0; i<10; i++){
+        append_result(TEST_RESULT[i%2], i);
+}
+
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.getAll('query');
 console.log(query);
