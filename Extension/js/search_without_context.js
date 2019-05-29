@@ -53,11 +53,11 @@ function append_result(obj, counter){
     $("#body").append(new_elem);
 }
 
-$('#test').click(function(){
-    chrome.tabs.create({
-        url: "search_without_context.html?query="+query
-    });
-});
+// $('#test').click(function(){
+//     for(var i=0; i<10; i++){
+//         append_result(TEST_RESULT[i%2], i);
+//     }
+// });
 
 // for(var i=0; i<10; i++){
 //         append_result(TEST_RESULT[i%2], i);
@@ -67,7 +67,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.getAll('query');
 console.log(query);
 const Http = new XMLHttpRequest();
-const url='http://localhost:5000/search?q='+query.join(" ");
+const url='http://localhost:5000/search_no_context?q='+query.join(" ");
 Http.open("GET", url);
 Http.send();
 
